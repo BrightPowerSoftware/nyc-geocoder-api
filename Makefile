@@ -20,10 +20,10 @@ $(LIBPOSTAL_INSTALL_DIR)/libpostal:
 	cd $(LIBPOSTAL_INSTALL_DIR) && \
 	git clone https://github.com/openvenues/libpostal && \
 	cd libpostal && ./bootstrap.sh && ./configure --datadir=$(LIBPOSTAL_DATA_DIR) && \
-	make && sudo make install && sudo ldconfig
+	make && make install && ldconfig
 
 libpostal_packages: 
-	sudo apt install curl autoconf automake libtool pkg-config
+	apt-get -y install curl autoconf automake libtool pkg-config
 
 libpostal_clean:
 	rm -rf $(LIBPOSTAL_INSTALL_DIR)

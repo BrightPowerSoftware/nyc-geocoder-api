@@ -69,29 +69,19 @@ That's it! There's no authorization and no other information provided besides bb
 
 NOTE: This has not tested on anything other Debian-based systems. As currently setup it almost certainly won't work on other OSs.
 
-**setup geosupport and libpostal**
+**Install:**
 
 ``` sh
-make setup libpostal
-```
-
-**Install ruby gems:**
-
-``` sh
-bundle install
-```
-
-**Setup geosupport paths**
-
-``` sh
-source libgeo-paths 
+sudo ./install.sh
 ```
 
 **Run:**
 
 ``` sh
-ruby app.rb
+./start.sh
 ```
+
+`start.sh` sets the server port to 8090.
 
 
 **Run the tests:**
@@ -99,3 +89,7 @@ ruby app.rb
 ``` sh
 rspec test.rb
 ```
+
+### Dockerfile
+
+`Dockerfile` creates a docker image with this service running on Ubuntu and available on exposed port 8090. 
