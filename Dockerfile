@@ -8,4 +8,5 @@ COPY . .
 RUN ./install.sh
 
 EXPOSE 8090
+ENV PORT=8090
 CMD [ "./start.sh" ]

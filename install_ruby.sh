@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # install apt-add-repository to add repo with ruby 2.3
 apt-get update
 apt-get install -y software-properties-common python-software-properties

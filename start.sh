@@ -1,3 +1,6 @@
+#!/bin/bash
+
 source libgeo-paths
 
-PORT=8090 bundle exec ruby app.rb
+echo 'Starting app on port $PORT ...'
+bundle exec ruby app.rb

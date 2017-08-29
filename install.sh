@@ -1,3 +1,5 @@
+#!/bin/sh
+
 apt-get install -y source
 
 ./install_ruby.sh
